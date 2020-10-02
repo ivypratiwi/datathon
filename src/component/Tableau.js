@@ -10,7 +10,7 @@ export default function Tableau() {
     const ref = useRef(null);
     const url = 'https://public.tableau.com/views/IndustryScanner-Datathon/Dashboard1'
     let options
-    window.innerWidth <= 769 ? options = { width: "100%", height: "1700px", mobile: "yes" } : options = { width: "100%", height: "800px" }
+    window.innerWidth <= 769 ? options = { width: "100%", height: "1700px", mobile: "yes", tooltip: "yes" } : options = { width: "100%", height: "800px", tooltip: "yes" }
 
     function initViz() {
         new tableau.Viz(ref.current, url, options)
@@ -44,9 +44,9 @@ const Styles = styled.div`
     }
 }
 @media (max-width: 1500px) {
-.tableau-div{
-    padding-top:1%;
-}
+    .tableau-div{
+        padding-top:1%;
+    }
 }
 @media (max-width: 1024px) {
     .jumbotron{
@@ -54,6 +54,11 @@ const Styles = styled.div`
     }
     .tableau-div{
         padding-top:7%;
+    }
+}
+@media (max-width: 600px) {
+    .jumbotron{
+        height: 100%;
     }
 }
 `

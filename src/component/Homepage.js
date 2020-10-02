@@ -14,12 +14,12 @@ export default function HomePage() {
                             <h1>Hey.</h1><br></br>
                             <h4>Do you want to know about the employment in
                                 different Industries in Australia?</h4><br></br>
-                            <h4>Then, this is a great place for you!</h4><br></br>
+                            <h4>This platform might be what you need!</h4><br></br>
                             <Button variant="outline-light" size="lg" href="/data">Start Exploring</Button>{' '}
                         </Col>
                         <Col md={6} className="col-div2">
                             <div>
-                                <h5>View the video to understand more about us.</h5>
+                                <h5>View the video to understand more about the problem statement.</h5>
                                 <ResponsiveEmbed aspectRatio="16by9">
                                     <div dangerouslySetInnerHTML={{ __html: iframe }} />
                                 </ResponsiveEmbed>
@@ -51,9 +51,9 @@ const Styles = styled.div`
     padding: 18vh 0;
 }
 @media (max-width: 1024px) {
-.jumbotron{
-    height: 100vh;
-}
+    .jumbotron{
+        height: 100vh;
+    }
 }
 @media (max-width: 768px) {
     .row{
@@ -76,6 +76,12 @@ const Styles = styled.div`
     }
     h5{
         font-size:100%;
+    }
+}
+@media (max-width: 500px) {
+    .btn{
+        background-color:black;
+        color:white;
     }
 }
 `
