@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Source Code for Datathon 2020
 Industry Scanner aims to provide understanding on industries across Australia to make informed decisions.
 
