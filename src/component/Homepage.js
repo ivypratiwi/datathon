@@ -33,29 +33,39 @@ export default function HomePage() {
 }
 
 const Styles = styled.div` 
-.jumbotron{
-    background: url(${jumbo1})fixed bottom;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom:0px;
+
+@media (max-width: 2000px) {
+    .jumbotron{
+        background: url(${jumbo1})fixed bottom;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom:0px;
+    }
+    
+    .col-div{
+        color:white;
+        padding: 20vh 0;
+    }
+    .col-div2{
+        color:white;
+        padding: 18vh 0;
+    }
+}
+@media (max-width: 1400px) {
+    .jumbotron{
+        height: 100vh;
+    }
 }
 
-.col-div{
-    color:white;
-    padding: 20vh 0;
-}
-.col-div2{
-    color:white;
-    padding: 18vh 0;
-}
 @media (max-width: 1024px) {
     .jumbotron{
         height: 100vh;
     }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
     .row{
         padding:8%;
     }
@@ -66,7 +76,7 @@ const Styles = styled.div`
         padding: 3vh 0;
     }
     .jumbotron{
-        height: 100%;
+        height: 100vh;
     }
     h1{
         font-size:150%;
@@ -82,6 +92,9 @@ const Styles = styled.div`
     .btn{
         background-color:black;
         color:white;
+    }
+    .jumbotron{
+        height: 100vh;
     }
 }
 `
