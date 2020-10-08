@@ -37,13 +37,12 @@ const Styles = styled.div`
 @media (max-width: 2000px) {
     .jumbotron{
         background: url(${jumbo1})fixed bottom;
-        height: 100vh;
+        height: 120vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom:0px;
     }
-    
     .col-div{
         color:white;
         padding: 20vh 0;
@@ -55,13 +54,7 @@ const Styles = styled.div`
 }
 @media (max-width: 1400px) {
     .jumbotron{
-        height: 100vh;
-    }
-}
-
-@media (max-width: 1024px) {
-    .jumbotron{
-        height: 100vh;
+        height: 120vh;
     }
 }
 
@@ -74,9 +67,6 @@ const Styles = styled.div`
     }
     .col-div2{
         padding: 3vh 0;
-    }
-    .jumbotron{
-        height: 100vh;
     }
     h1{
         font-size:150%;
@@ -92,9 +82,6 @@ const Styles = styled.div`
     .btn{
         background-color:black;
         color:white;
-    }
-    .jumbotron{
-        height: 100vh;
     }
 }
 `
